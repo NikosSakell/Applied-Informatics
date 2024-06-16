@@ -1,0 +1,22 @@
+$ sudo apt install rpcbind
+$ sudo nano /etc/host.allow 
+{insert line
+rpcbind: ALL: allow}
+$ rpcinfo
+(to check in rpc directory is working)
+
+{go to rpcgen forlder for compilation}
+$ sudo apt install libntirpc-dev
+$ CPATH=$CPATH:/usr/include/tirpc
+
+{rename add.x.txt to add.x}
+$ rpcgen -N -a add.x
+{edit add_client.c add_server.c }
+
+{do not use Makefile.add }
+{rename Makefile.add.txt to Makefile}
+$ make 
+{make clean if you want to remove all files}
+
+$ sudo ./add_server
+{another terminal} $ ./add_client localhost 6 7
