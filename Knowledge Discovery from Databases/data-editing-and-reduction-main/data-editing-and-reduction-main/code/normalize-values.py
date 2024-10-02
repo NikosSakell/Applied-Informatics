@@ -22,7 +22,7 @@ def normalize_values(input_file, output_file):
     df_normalized.to_csv(output_file, index=False)
 
 if __name__ == "__main__":
-    input_file = "C:/Users/HP/Desktop/Computer Science/7ο Εξάμηνο/Ανακάλυψη γνώσης από Βάσεις Δεδομένων/pp1/pp1/letter-recognition.csv"  # Replace with the path to your input CSV file
-    output_file = "C:/Users/HP/Desktop/Computer Science/7ο Εξάμηνο/Ανακάλυψη γνώσης από Βάσεις Δεδομένων/pp1/pp1/normalized_output.csv"  # Replace with the desired output path
+    input_file = "C:.../letter-recognition.csv"  # Replace with the path to your input CSV file
+    output_file = "C:.../normalized_output.csv"  # Replace with the desired output path
 
     normalize_values(input_file, output_file)
