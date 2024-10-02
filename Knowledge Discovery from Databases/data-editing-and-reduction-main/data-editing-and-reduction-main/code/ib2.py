@@ -43,7 +43,7 @@ def ib2(input_file, output_file, k=3, threshold=0.9):
     df_ib2.to_csv(output_file, index=False)
 
 if __name__ == "__main__":
-    input_file = r"C:\Users\HP\Desktop\Computer Science\7ο Εξάμηνο\Ανακάλυψη γνώσης από Βάσεις Δεδομένων\pp1\pp1\NormalizeValuesOutput\letter-recognition-normalized-output.csv"  # Replace with the path to your normalized input CSV file
-    output_file = r"C:\Users\HP\Desktop\Computer Science\7ο Εξάμηνο\Ανακάλυψη γνώσης από Βάσεις Δεδομένων\pp1\pp1\letter-recognition-ib2-output.csv"  # Replace with the desired output path
+    input_file = r"C:...\letter-recognition-normalized-output.csv"  # Replace with the path to your normalized input CSV file
+    output_file = r"C:...\letter-recognition-ib2-output.csv"  # Replace with the desired output path
 
     ib2(input_file, output_file)
