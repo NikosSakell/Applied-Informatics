@@ -30,7 +30,7 @@ def enn(input_file, output_file, k=3):
     df_enn.to_csv(output_file, index=False)
 
 if __name__ == "__main__":
-    input_file = r"C:\Users\HP\Desktop\Computer Science\7ο Εξάμηνο\Ανακάλυψη γνώσης από Βάσεις Δεδομένων\pp1\pp1\NormalizeValuesOutput\letter-recognition-normalized-output.csv"  # Replace with the path to your normalized input CSV file
-    output_file = r"C:\Users\HP\Desktop\Computer Science\7ο Εξάμηνο\Ανακάλυψη γνώσης από Βάσεις Δεδομένων\pp1\pp1\letter-recognition-enn-applied.csv"  # Replace with the desired output path
+    input_file = r"C:...\letter-recognition-normalized-output.csv"  # Replace with the path to your normalized input CSV file
+    output_file = r"C:...\letter-recognition-enn-applied.csv"  # Replace with the desired output path
 
     enn(input_file, output_file)
